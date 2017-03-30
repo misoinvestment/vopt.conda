@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-conda create --name vopt --yes pip python && \
+conda create --name vopt --yes python=2 pip && \
 source activate vopt && \
 conda install --yes --quiet -c conda-forge cvxopt && \
 conda install --yes --quiet -c cvxgrp cvxpy && \

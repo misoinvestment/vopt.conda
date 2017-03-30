@@ -1,6 +1,6 @@
 cd /D %~dp0
 
-conda create --name vopt --yes pip menuinst
+conda create --name vopt --yes python=2 pip menuinst
 call activate vopt
 
 REM Windows only. Numpy and related packages must be installed using pip
