@@ -10,8 +10,9 @@ pip install windows_packages\cvxopt-1.1.9-cp27-cp27m-win_amd64.whl
 pip install windows_packages\CVXcanon-0.1.1-cp27-cp27m-win_amd64.whl
 pip install windows_packages\cvxpy-0.4.9-py2-none-any.whl
 pip install matplotlib pandas seaborn statsmodels
+pip install json-rpc
 
-conda install --yes --quiet coverage dateutil django ipython nose notebook psycopg2 qtconsole xlrd xlwt
+conda install --yes --quiet coverage dateutil django flask ipython jinja2 nose notebook psycopg2 qtconsole werkzeug xlrd xlwt
 
 call deactivate
 cmd.exe /K

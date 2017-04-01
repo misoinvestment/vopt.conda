@@ -5,5 +5,6 @@ source activate vopt && \
 conda install --yes --quiet -c conda-forge cvxopt && \
 conda install --yes --quiet -c cvxgrp cvxpy && \
 conda install --yes --quiet matplotlib pandas seaborn statsmodels && \
-conda install --yes --quiet coverage dateutil django ipython nose notebook psycopg2 qtconsole xlrd xlwt && \
+pip install json-rpc && \
+conda install --yes --quiet coverage dateutil django flask ipython jinja2 nose notebook psycopg2 qtconsole werkzeug xlrd xlwt && \
 source deactivate
