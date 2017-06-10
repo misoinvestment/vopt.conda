@@ -7,12 +7,47 @@ Anaconda environment tools for `vopt` python package
 
 You can create or delete a conda environment named `vopt` for vopt python package.
 
+### On Windows
+
 1. install Anaconda
-2. execute `create_env.bat` (for windows) or `create_env.sh` (for linux).
-3. if you want to remove the environment, execute `delete_env.bat` (for windows) or `delete_env.sh` (for linux).
+1. execute `create_env1.bat` as administrator
+1. execute `create_env2.bat` as administrator
+1. execute `create_env3.bat` as administrator
+
+### On Linux, Mac
+
+1. install Anaconda
+1. execute `create_env.sh`
+
+
+## Uninstallation
+
+### On Windows
+
+1. execute `delete_env.bat` as administrator
+
+### On Linux, Mac
+
+1. execute `delete_env.sh`
 
 
 ## Activation
 
-1. to activate the environment, execute `activate vopt` (for windows) or `source activate vopt` (for linux).
-2. to deactivate the environment, execute `deactivate` (for windows) or `source deactivate` (for linux).
+### On Windows
+
+1. execute `activate vopt`
+
+### On Linux, Mac
+
+1. execute `source activate vopt`
+
+
+## Deactivation
+
+### On Windows
+
+1. execute `deactivate`
+
+### On Linux, Mac
+
+1. execute `source deactivate`
