@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-conda create --name vopt --yes python=2 pip && \
+conda create --name vopt --yes python=3 pip && \
 source activate vopt && \
-conda install --yes --quiet -c conda-forge cvxopt && \
-conda install --yes --quiet -c cvxgrp cvxpy && \
-conda install --yes --quiet matplotlib pandas seaborn statsmodels && \
+conda install --yes --quiet -c cvxgrp cvxopt cvxpy && \
 pip install coreapi django django-crispy-forms django-filter django-guardian django-jinja djangorestframework json-rpc && \
-conda install --yes --quiet coverage cython dateutil flask ipython jinja2 markdown nose notebook psycopg2 qtconsole requests werkzeug xlrd xlwt && \
+conda install --yes --quiet coverage markdown psycopg2 && \
 source deactivate
