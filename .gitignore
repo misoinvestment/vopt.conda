@@ -23,3 +23,4 @@
 # KDE
 .idea
 .DS_Store
+/windows_packages/numpy-1.12.1+mkl-cp35-cp35m-win_amd64.whl

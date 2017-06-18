@@ -2,6 +2,8 @@ cd /D %~dp0
 
 call activate vopt
 
+7z e "windows_packages\numpy-1.12.1+mkl-cp35-cp35m-win_amd64.7z.001" -o"windows_packages" -y
+
 pip install windows_packages\numpy-1.12.1+mkl-cp35-cp35m-win_amd64.whl
 pip install windows_packages\cvxopt-1.1.9-cp35-cp35m-win_amd64.whl
 pip install windows_packages\CVXcanon-0.1.1-cp35-cp35m-win_amd64.whl
