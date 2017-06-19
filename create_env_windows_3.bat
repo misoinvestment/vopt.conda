@@ -15,7 +15,7 @@ pip install windows_packages\cvxpy-0.4.10-py3-none-any.whl
 
 pip install ^
 coreapi django-crispy-forms django-filter django-guardian django-jinja djangorestframework ^
-eve json-rpc tushare
+eve json-rpc SQLAlchemy-Continuum tushare
 
 call deactivate
 cmd.exe /K
