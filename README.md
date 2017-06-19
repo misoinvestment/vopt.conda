@@ -239,8 +239,8 @@ You can create or delete a conda environment named `vopt` for vopt python packag
 
 ### On Linux, Mac
 
-1. Execute `create_env_windows_1.sh`.
-1. Execute `create_env_windows_2.sh`.
+1. Execute `create_env_linux_1.sh`.
+1. Execute `create_env_linux_2.sh`.
 
 
 ## Uninstallation
