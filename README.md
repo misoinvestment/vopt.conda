@@ -231,7 +231,7 @@ You can create or delete a conda environment named `vopt` for vopt python packag
 
 ### On Windows
 
-1. Using 7zip, join `windows_packages\numpy-1.12.1+mkl-cp35-cp35m-win_amd64.7z.001` and `windows_packages\numpy-1.12.1+mkl-cp35-cp35m-win_amd64.7z.002`.
+1. Download and install 7zip. Add path to ``7z.exe``.
     * download 7zip at http://www.7-zip.org/download.html
 1. Execute `create_env_windows_1.bat` as administrator.
 1. Execute `create_env_windows_2.bat` as administrator. (Remove Non-MKL NumPy)
