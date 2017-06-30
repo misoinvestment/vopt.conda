@@ -5,6 +5,6 @@ conda install --yes --quiet anaconda coverage django flask markdown psycopg2 && 
 conda install --yes --quiet -c cvxgrp cvxopt cvxpy && \
 pip install \
 coreapi django-crispy-forms django-filter django-guardian django-jinja djangorestframework \
-eve flask-restplus json-rpc SQLAlchemy-Continuum tushare \
+eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare \
 && echo
 source deactivate
