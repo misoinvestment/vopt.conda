@@ -224,6 +224,11 @@ vopt.conda is a conda virtual enviroment for vopt(Veranos Optimizer)
     * https://www.continuum.io/downloads
     * https://conda.io/miniconda.html
 
+* For linux, install libgl1-mesa-glx
+   ```
+   sudo apt install libgl1-mesa-glx
+   ```
+
 
 ## Installation
 
