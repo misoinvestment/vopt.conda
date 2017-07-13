@@ -23,7 +23,6 @@ vopt.conda is a conda virtual enviroment for vopt(Veranos Optimizer)
   and the `veranostech/vopt` docker image in which `vopt` enviroment is already installed.
 
 
-
 ## Installation
 
 You can create or delete a conda environment named `vopt` for vopt python package.
