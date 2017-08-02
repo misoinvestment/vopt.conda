@@ -2,6 +2,7 @@
 
 source activate vopt && \
 conda install --yes --quiet anaconda coverage django=1.10 flask markdown psycopg2 && \
+conda install --yes --quiet -c conda-forge fabric3 && \
 conda update --yes --quiet libgcc && \
 pip install \
 cvxopt cvxpy \
