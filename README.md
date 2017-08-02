@@ -29,8 +29,8 @@ You can create or delete a conda environment named `vopt` for vopt python packag
 
 ### On Linux
 
-1. `$ source create_env_linux_1_create_env.sh`.
-1. `$ source create_env_linux_2_install_pkg.sh`.
+1. `$ source create_env.sh`
+1. `$ source install_pkg.sh`
 
 ### On Mac and Windows Docker-Toolbox
 
@@ -47,24 +47,24 @@ You can create or delete a conda environment named `vopt` for vopt python packag
 
 ### On Mac (Local Installation)
 
-1. `$ source create_env_mac_1_create_env.sh`.
-1. `$ source create_env_mac_2_install_lib.sh`.
-1. `$ source create_env_mac_3_install_pkg.sh`.
+1. `$ source install_lib.sh` (install CBC and GLPK)
+1. `$ source create_env.sh`
+1. `$ source install_pkg_mac.sh`
 
 ### On Windows (Local Installation)
 
 1. Download and install 7zip. Add path to ``7z.exe``.
     * download 7zip at http://www.7-zip.org/download.html
-1. Execute `create_env_windows_1_create_env.bat` as administrator.
-1. Execute `create_env_windows_2_remove_numpy.bat` as administrator. (Remove Non-MKL NumPy)
-1. Execute `create_env_windows_3_install_pkg.bat` as administrator. (Re-install MKL NumPy)
+1. Execute `create_env.bat` as administrator.
+1. Execute `remove_numpy.bat` as administrator. (Remove Non-MKL NumPy)
+1. Execute `install_pkg.bat` as administrator. (Re-install MKL NumPy)
 
 
 ## Uninstallation
 
 ### On Linux, Mac
 
-1. `$ source delete_env.sh`.
+1. `$ source delete_env.sh`
 
 ### On Windows
 
@@ -75,20 +75,20 @@ You can create or delete a conda environment named `vopt` for vopt python packag
 
 ### On Linux, Mac
 
-1. `$ source activate vopt`.
+1. `$ source activate vopt`
 
 ### On Windows
 
-1. Execute `activate vopt`.
+1. `$ activate vopt`
 
 
 ## Deactivation
 
 ### On Linux, Mac
 
-1. `$ source deactivate`.
+1. `$ source deactivate`
 
 ### On Windows
 
-1. Execute `deactivate`.
+1. `$ activate vopt`
 

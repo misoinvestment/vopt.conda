@@ -24,10 +24,3 @@ make
 make install
 make clean
 EOF
-
-export COIN_INSTALL_DIR=/usr/local/src/Cbc-2.8.9
-export LD_LIBRARY_PATH="/usr/local/src/Cbc-2.8.9/lib:$LD_LIBRARY_PATH"
-
-export GLPK_LIB_DIR=/usr/local/lib
-export GLPK_INC_DIR=/usr/local/include
-export BUILD_GLPK=1
