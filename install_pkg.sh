@@ -6,7 +6,7 @@ conda install --yes --quiet -c conda-forge fabric3 && \
 conda update --yes --quiet libgcc && \
 pip install \
 cvxopt cvxpy \
-coreapi django-crispy-forms django-filter django-guardian django-jinja djangorestframework \
+awscli coreapi django-crispy-forms django-filter django-guardian django-jinja djangorestframework \
 eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare \
 && echo
 
