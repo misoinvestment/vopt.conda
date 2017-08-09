@@ -15,7 +15,8 @@ esac
 
 echo "Python package installing..."
 source activate vopt && \
-conda install --yes --quiet anaconda coverage django=1.10 flask gevent greenlet gunicorn markdown psycopg2 && \
+conda install --yes --quiet \
+anaconda coverage django=1.10 flask gevent greenlet gunicorn markdown psycopg2 sphinx_rtd_theme && \
 conda update --yes --quiet libgcc && \
 conda install --yes --quiet -c conda-forge fabric3 && \
 pip install \
