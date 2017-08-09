@@ -15,7 +15,7 @@ pip install windows_packages\cvxpy-0.4.10-py3-none-any.whl
 
 pip install ^
 awscli coreapi django-crispy-forms django-filter django-guardian django-jinja djangorestframework ^
-eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare
+eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare wsgi
 
 conda install --yes --quiet -c conda-forge fabric3
 

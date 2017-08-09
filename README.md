@@ -10,7 +10,7 @@ vopt.conda is a conda virtual enviroment for vopt(Veranos Optimizer)
 
 ## Prerequisite
 
-* You need Anaconda or Miniconda. Any version is OK.
+* You need Anaconda or Miniconda. Recommend 64-bit Python 3.6 version
     * https://www.continuum.io/downloads
     * https://conda.io/miniconda.html
 
@@ -27,12 +27,30 @@ vopt.conda is a conda virtual enviroment for vopt(Veranos Optimizer)
 
 You can create or delete a conda environment named `vopt` for vopt python package.
 
-### On Linux
+
+### On Linux (Local Installation)
 
 1. `$ source create_env.sh`
 1. `$ source install_pkg.sh`
 
-### On Mac and Windows Docker-Toolbox
+
+### On Mac (Local Installation)
+
+1. `$ source install_lib_mac.sh`
+1. `$ source create_env.sh`
+1. `$ source install_pkg.sh`
+
+
+### On Windows (Local Installation)
+
+1. Download and install 7zip. Add path to ``7z.exe``.
+    * download 7zip at http://www.7-zip.org/download.html
+1. Execute `create_env.bat` as administrator.
+1. Execute `remove_numpy.bat` as administrator. (Remove Non-MKL NumPy)
+1. Execute `install_pkg.bat` as administrator. (Re-install MKL NumPy)
+
+
+### On Mac and Windows (Using Docker-Toolbox)
 
 1. Install docker-toolbox
 1. Start a docker machine using Docker QuicStart Terminal or type:
@@ -45,22 +63,7 @@ You can create or delete a conda environment named `vopt` for vopt python packag
    $ docker run -Pit --name vopt veranostech/vopt
    ```    
 
-### On Mac (Local Installation)
-
-1. `$ source install_lib.sh` (install CBC and GLPK)
-1. `$ source create_env.sh`
-1. `$ source install_pkg_mac.sh`
-
-### On Windows (Local Installation)
-
-1. Download and install 7zip. Add path to ``7z.exe``.
-    * download 7zip at http://www.7-zip.org/download.html
-1. Execute `create_env.bat` as administrator.
-1. Execute `remove_numpy.bat` as administrator. (Remove Non-MKL NumPy)
-1. Execute `install_pkg.bat` as administrator. (Re-install MKL NumPy)
-
-
-## Uninstallation
+## Uninstallation (Local)
 
 ### On Linux, Mac
 
@@ -71,24 +74,29 @@ You can create or delete a conda environment named `vopt` for vopt python packag
 1. Execute `delete_env.bat` as administrator.
 
 
-## Activation
+## Environment Usage
 
 ### On Linux, Mac
 
-1. `$ source activate vopt`
+* when you activate the environment.
+  ```
+  $ source activate vopt
+  ```
+
+* when you activate the environment.
+  ```
+  $ source deactivate
+  ```
 
 ### On Windows
 
-1. `$ activate vopt`
+* when you activate the environment.
+  ```
+  $ activate vopt
+  ```
 
-
-## Deactivation
-
-### On Linux, Mac
-
-1. `$ source deactivate`
-
-### On Windows
-
-1. `$ activate vopt`
+* when you activate the environment.
+  ```
+  $ deactivate
+  ```
 
