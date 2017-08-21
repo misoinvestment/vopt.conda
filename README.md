@@ -38,8 +38,8 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
 
 ### Local Installation
 
-1. `$ source create_env.sh` : create virtual environment
 1. `$ source install_lib.sh` : install linux libraries
+1. `$ source create_env.sh` : create virtual environment
 1. `$ source install_pkg.sh` : install Python packages
 
 
