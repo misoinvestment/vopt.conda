@@ -8,11 +8,11 @@ case `uname` in
       VER=$(lsb_release -sr)
 
       if [ "$OS" == "Ubuntu" ] && [ "$VER" == "16.04" ]; then
-        sudo apt-get update && \
-        sudo apt-get upgrade && \
-        sudo apt-get install \
+        sudo apt-get update -y -q && \
+        sudo apt-get upgrade -y -q && \
+        sudo apt-get install -y -q \
         apt-file gdebi-core software-properties-common pkg-config \
-        sudo sudoconf sudomake  man htop ncdu dos2unix \
+        sudo man htop ncdu dos2unix \
         ed emacs24 vim tmux screen zip unzip bzip2 git mercurial subversion curl wget \
         net-tools openssl apparmor \
         build-essential cmake make gfortran gettext libtool swig uuid-dev \
@@ -21,12 +21,12 @@ case `uname` in
         libboost-all-dev libclang1 libclang-dev libcurl4-gnutls-dev libspatialindex-dev libgeos-dev libgdal-dev \
         libgoogle-glog-dev libprotobuf-dev protobuf-compiler libgflags-dev libgtest-dev libiomp-dev libleveldb-dev \
         liblmdb-dev libjpeg-dev libpq-dev libpgm-dev libpng-dev libpng12-dev libpng++-dev libopencv-dev \
-        libtiff5-dev libevent-dev libapparmor1 libssh2-1-dev libssl-dev libgl1-mesa-glx
-        coinor-clp coinor-libclp-dev coinor-cbc coinor-csdp coinor-libcbc-dev coinor-licoinmp-dev \
+        libtiff5-dev libevent-dev libapparmor1 libssh2-1-dev libssl-dev libgl1-mesa-glx \
+        coinor-clp coinor-libclp-dev coinor-cbc coinor-csdp coinor-libcbc-dev coinor-libcoinmp-dev \
         coinor-libcgl-dev coinor-libdylp-dev coinor-libflopc++-dev coinor-libipopt-dev \
         coinor-libosi-dev coinor-libsymphony-dev coinor-libvol-dev coinor-libcoinutils-dev \
-        && sudo apt-get autoremove \
-        && sudo apt-get clean
+        && sudo apt-get -y -q autoremove \
+        && sudo apt-get -y -q clean
 
       else
           echo "Error! Support Ubuntu only."
