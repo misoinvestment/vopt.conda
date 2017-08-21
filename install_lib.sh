@@ -18,8 +18,9 @@ case `uname` in
         build-essential autoconf automake cmake make gfortran gettext libtool swig uuid-dev \
         default-jre default-jdk \
         nginx memcached openssh-server postgresql postgresql-contrib rsyslog supervisor \
-        libboost-all-dev libclang1 libclang-dev libcurl4-gnutls-dev libspatialindex-dev libgeos-dev libgdal-dev \
-        libgoogle-glog-dev libprotobuf-dev protobuf-compiler libgflags-dev libgtest-dev libiomp-dev libleveldb-dev \
+        libatlas-base-dev libboost-all-dev libclang1 libclang-dev libgflags-dev libgtest-dev \
+        libcurl4-gnutls-dev libspatialindex-dev libgeos-dev libgdal-dev \
+        libgoogle-glog-dev libprotobuf-dev protobuf-compiler libiomp-dev libleveldb-dev \
         liblmdb-dev libjpeg-dev libpq-dev libpgm-dev libpng-dev libpng12-dev libpng++-dev libopencv-dev \
         libtiff5-dev libevent-dev libapparmor1 libssh2-1-dev libssl-dev libgl1-mesa-glx \
         coinor-clp coinor-libclp-dev coinor-cbc coinor-csdp coinor-libcbc-dev coinor-libcoinmp-dev \
