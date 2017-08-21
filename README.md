@@ -2,101 +2,82 @@
 
 ## Description
 
-vopt.conda is a conda virtual enviroment for vopt(Veranos Optimizer)
+`vopt.conda` repository provides the scripts to install
+a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer 
 
-* Python 3.5 and other basic packages
-* read vopt-environment.yml
+`vopt` virtual enviroment consist of:
+
+* Python 3.5 and other python packages
+* for package details, read `vopt-environment.yml`
 
 
 ## Prerequisite
 
-* You need Anaconda or Miniconda. Recommend 64-bit Python 3.6 version
+* OS
+
+  * Ubuntu 16.04
+  * Mac OS X with Docker Toolbox
+
+* You need to install Anaconda or Miniconda. 
+
+  Download 64-bit Python 3.6 version from
     * https://www.continuum.io/downloads
     * https://conda.io/miniconda.html
 
-* For linux, install libgl1-mesa-glx
-   ```
-   $ sudo apt install libgl1-mesa-glx
-   ```
-
-* For Mac and Windows, recommend to use Docker-Toolbox 
-  and the `veranostech/vopt` docker image in which `vopt` enviroment is already installed.
+  and execute:
+  ```
+  $ bash Anaconda3-4.4.0-Linux-x86_64.sh
+  ```
+  or
+  ```
+  $ bash Miniconda3-latest-Linux-x86_64.sh
+  ```
 
 
 ## Installation
 
-You can create or delete a conda environment named `vopt` for vopt python package.
+### Local Installation
+
+1. `$ source create_env.sh` : create virtual environment
+1. `$ source install_lib.sh` : install linux libraries
+1. `$ source install_pkg.sh` : install Python packages
 
 
-### On Linux (Local Installation)
+### Using Docker Image
 
-1. `$ source create_env.sh`
-1. `$ source install_pkg.sh`
-
-
-### On Mac (Local Installation)
-
-1. `$ source install_lib_mac.sh`
-1. `$ source create_env.sh`
-1. `$ source install_pkg.sh`
-
-
-### On Windows (Local Installation)
-
-1. Download and install 7zip. Add path to ``7z.exe``.
-    * download 7zip at http://www.7-zip.org/download.html
-1. Execute `create_env.bat` as administrator.
-1. Execute `remove_numpy.bat` as administrator. (Remove Non-MKL NumPy)
-1. Execute `install_pkg.bat` as administrator. (Re-install MKL NumPy)
-
-
-### On Mac and Windows (Using Docker-Toolbox)
-
-1. Install docker-toolbox
-1. Start a docker machine using Docker QuicStart Terminal or type:
-1. Pull a docker image from dockerhub
+1. (Optionally on Mac) Install docker-toolbox
+1. (Optionally on Mac) Start a docker machine using Docker QuickStart Terminal
+1. Download a docker image from dockerhub
    ```
    $ docker pull veranostech/vopt
    ``` 
+   
+   or you can build the docker image on you computer.
+   
+   For details, read https://github.com/VeranosTech/vopt.docker
+ 
 1. Run the docker image
    ``` 
    $ docker run -Pit --name vopt veranostech/vopt
    ```    
 
-## Uninstallation (Local)
-
-### On Linux, Mac
-
-1. `$ source delete_env.sh`
-
-### On Windows
-
-1. Execute `delete_env.bat` as administrator.
-
-
-## Environment Usage
-
-### On Linux, Mac
+## Using Virtual Environment
 
 * when you activate the environment.
   ```
   $ source activate vopt
   ```
 
-* when you activate the environment.
+* when you deactivate the environment.
   ```
   $ source deactivate
   ```
 
-### On Windows
+## Uninstallation
 
-* when you activate the environment.
-  ```
-  $ activate vopt
-  ```
+```
+$ source delete_env.sh
+```
 
-* when you activate the environment.
-  ```
-  $ deactivate
-  ```
+
 

@@ -1,17 +1,10 @@
 #!/usr/bin/env bash
 
-case "$(uname -s)" in
-
-   Darwin)
-     echo "Settings for OS X..."
-     export COIN_INSTALL_DIR=/usr/local/src/Cbc-2.8.9
-     export LD_LIBRARY_PATH="/usr/local/src/Cbc-2.8.9/lib:$LD_LIBRARY_PATH"
-     export GLPK_LIB_DIR=/usr/local/lib
-     export GLPK_INC_DIR=/usr/local/include
-     export BUILD_GLPK=1
-     ;;
-
-esac
+export COIN_INSTALL_DIR=/usr/local/src/Cbc-2.9.9
+export LD_LIBRARY_PATH="/usr/local/src/Cbc-2.9.9/lib:$LD_LIBRARY_PATH"
+export GLPK_LIB_DIR=/usr/local/lib
+export GLPK_INC_DIR=/usr/local/include
+export BUILD_GLPK=1
 
 echo "Python package installing..."
 source activate vopt && \
@@ -25,7 +18,7 @@ awscli coreapi django-crispy-forms django-filter django-guardian django-jinja dj
 eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare uwsgi \
 && echo
 
-echo "CyLP package installing..."
+echo "CyLP package for Python3 installing..."
 cd ~ && \
 mkdir -p Code && \
 cd Code && \
