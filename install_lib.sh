@@ -15,7 +15,7 @@ case `uname` in
         sudo man htop ncdu dos2unix \
         ed emacs24 vim tmux screen zip unzip bzip2 git mercurial subversion curl wget \
         net-tools openssl apparmor \
-        build-essential cmake make gfortran gettext libtool swig uuid-dev \
+        build-essential autoconf automake cmake make gfortran gettext libtool swig uuid-dev \
         default-jre default-jdk \
         nginx memcached openssh-server postgresql postgresql-contrib rsyslog supervisor \
         libboost-all-dev libclang1 libclang-dev libcurl4-gnutls-dev libspatialindex-dev libgeos-dev libgdal-dev \
