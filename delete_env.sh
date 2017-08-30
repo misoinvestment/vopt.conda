@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-conda env remove -n vopt --yes
+
+conda env remove --name vopt --yes
