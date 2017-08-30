@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# set environment
 export COIN_INSTALL_DIR=/usr/local/src/Cbc-2.8.9
 export LD_LIBRARY_PATH="/usr/local/src/Cbc-2.8.9.9/lib:$LD_LIBRARY_PATH"
 export GLPK_LIB_DIR=/usr/local/lib
@@ -9,25 +10,18 @@ export BUILD_GLPK=1
 echo "Python package installing..."
 source activate vopt && \
 conda install --yes --quiet \
-anaconda coverage django=1.10 flask gevent greenlet gunicorn markdown psycopg2 sphinx_rtd_theme && \
-conda update --yes --quiet libgcc && \
+anaconda coverage cvxopt django=1.10 flask gevent greenlet markdown psycopg2 sphinx_rtd_theme && \
 conda install --yes --quiet -c conda-forge fabric3 && \
+conda update --yes --quiet gunicorn libgcc && \
 pip install \
-cvxopt cvxpy \
-awscli coreapi django-crispy-forms django-filter django-guardian django-jinja djangorestframework \
-eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare uwsgi \
+pudb uwsgi \
+&& \
+pip install \
+awscli coreapi cvxpy django-crispy-forms django-filter django-guardian django-jinja djangorestframework \
+eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare \
 && echo
 
 echo "CyLP package for Python3 installing..."
-cd ~ && \
-mkdir -p Code && \
-cd Code && \
-rm -rf CyLP && \
-git clone https://github.com/jjhelmus/CyLP.git &&
-cd CyLP/ && \
-git checkout py3 && \
-python setup.py install && \
-cd ~ && \
-echo
+pip install git+https://github.com/jjhelmus/CyLP.git@py3
 
 source deactivate

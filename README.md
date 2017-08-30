@@ -36,17 +36,49 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
 
 ## Installation
 
-### Local Installation
+### Linux/MacOSX
 
 1. `$ source install_lib.sh` : install linux libraries
 1. `$ source create_env.sh` : create virtual environment
 1. `$ source install_pkg.sh` : install Python packages
 
 
-### Using Docker Image
+### Windows (No GLPK/CBC library)
 
-1. (Optionally on Mac) Install docker-toolbox
-1. (Optionally on Mac) Start a docker machine using Docker QuickStart Terminal
+1. `$ create_env.bat` : create virtual environment
+1. `$ install_pkg.bat` : install Python packages
+
+
+## Using Environment
+
+* activate the environment.
+  ```
+  $ source activate vopt
+  ```
+
+* deactivate the environment.
+  ```
+  $ source deactivate
+  ```
+
+## Uninstallation
+
+### Linux/MacOSX
+
+```
+$ source delete_env.sh
+```
+
+### on Windows
+
+```
+$ delete_env.bat
+```
+
+## Using Docker Image with Pre-Installed Enviroment
+
+1. (Optionally on Mac/Windows) Install docker-toolbox
+1. (Optionally on Mac/Windows) Start a docker machine using Docker QuickStart Terminal
 1. Download a docker image from dockerhub
    ```
    $ docker pull veranostech/vopt
@@ -60,24 +92,5 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
    ``` 
    $ docker run -Pit --name vopt veranostech/vopt
    ```    
-
-## Using Virtual Environment
-
-* when you activate the environment.
-  ```
-  $ source activate vopt
-  ```
-
-* when you deactivate the environment.
-  ```
-  $ source deactivate
-  ```
-
-## Uninstallation
-
-```
-$ source delete_env.sh
-```
-
 
 

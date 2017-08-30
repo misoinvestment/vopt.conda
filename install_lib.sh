@@ -31,22 +31,22 @@ case `uname` in
 
       else
           echo "Error! Support Ubuntu only."
-          exit 1
+          return
       fi
 
     else
        echo "Error! Cannot find linux version."
-       exit 1
+       return
     fi
     ;;
 
   Darwin)
-     echo "Mac OS X. Stoppe"
+     echo "Mac OS X."
      ;;
 
   *)
      echo "Error! Unsupported OS."
-     exit 1
+     return
      ;;
 
 esac
