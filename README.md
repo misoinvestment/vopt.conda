@@ -17,6 +17,7 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
 
   * Ubuntu 16.04
   * Mac OS X with Docker Toolbox
+  * Windows (No CBC/CLP solver)
 
 * You need to install Anaconda or Miniconda.
 
@@ -47,7 +48,7 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
 1. `$ source install_pkg.sh` : install Python packages
 
 
-### Windows (No GLPK/CBC library)
+### Windows (No CBC/CLP solver in cvxpy)
 
 1. `$ create_env.bat` : create virtual environment
 1. `$ install_pkg.bat` : install Python packages
