@@ -3,7 +3,7 @@
 ## Description
 
 `vopt.conda` repository provides the scripts to install
-a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer 
+a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
 
 `vopt` virtual enviroment consist of:
 
@@ -18,7 +18,7 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
   * Ubuntu 16.04
   * Mac OS X with Docker Toolbox
 
-* You need to install Anaconda or Miniconda. 
+* You need to install Anaconda or Miniconda.
 
   Download 64-bit Python 3.6 version from
     * https://www.continuum.io/downloads
@@ -32,6 +32,10 @@ a conda virtual enviroment named `vopt` for `vopt` Veranos Optimizer
   ```
   $ bash Miniconda3-latest-Linux-x86_64.sh
   ```
+
+* On Windows, you need to install "Microsoft Visual C++ Build Tools"
+
+  * http://landinghub.visualstudio.com/visual-cpp-build-tools
 
 
 ## Installation
@@ -82,15 +86,13 @@ $ delete_env.bat
 1. Download a docker image from dockerhub
    ```
    $ docker pull veranostech/vopt
-   ``` 
-   
+   ```
+
    or you can build the docker image on you computer.
-   
+
    For details, read https://github.com/VeranosTech/vopt.docker
- 
+
 1. Run the docker image
-   ``` 
+   ```
    $ docker run -Pit --name vopt veranostech/vopt
-   ```    
-
-
+   ```
