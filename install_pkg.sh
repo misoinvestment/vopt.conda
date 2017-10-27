@@ -10,7 +10,7 @@ export BUILD_GLPK=1
 echo "Python package installing..."
 source activate vopt && \
 conda install --yes --quiet \
-anaconda coverage ecos django=1.10 flask gevent greenlet markdown psycopg2 sphinx_rtd_theme && \
+anaconda alembic coverage ecos django=1.10 flask gevent greenlet markdown psycopg2 sphinx_rtd_theme && \
 conda install --yes --quiet -c conda-forge fabric3 && \
 conda update --yes --quiet libgcc && \
 pip install \
