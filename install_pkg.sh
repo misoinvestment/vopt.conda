@@ -10,7 +10,8 @@ export BUILD_GLPK=1
 echo "Python package installing..."
 source activate vopt && \
 conda install --yes --quiet \
-anaconda alembic coverage ecos django=1.10 flask gevent greenlet markdown psycopg2 scrapy sphinx_rtd_theme && \
+anaconda alembic coverage ecos django=1.10 flask gevent greenlet ipyparallel \
+markdown psycopg2 scrapy sphinx_rtd_theme && \
 conda install --yes --quiet -c conda-forge fabric3 && \
 conda update --yes --quiet libgcc && \
 pip install \
@@ -19,7 +20,9 @@ gunicorn pudb uwsgi \
 pip install \
 awscli coreapi cvxopt cvxpy django-crispy-forms django-filter django-guardian django-jinja djangorestframework \
 eve flask-restplus flask-security flask_sqlalchemy json-rpc SQLAlchemy-Continuum tushare \
-&& echo
+&&
+ipcluster nbextension enable &&
+echo
 
 echo "CyLP package for Python3 installing..."
 pip install git+https://github.com/jjhelmus/CyLP.git@py3
